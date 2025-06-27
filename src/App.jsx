@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Counter } from "./Counter";
 import { Buscador } from "./Buscador";
 import { GridGifs } from "./GridGifs";
+import { ComponenteXD } from "./ComponenteXD";
 function App() {
   const [valorInput, setValorInput] = useState("skere");
   const [gifs, setGifs] = useState([]);
@@ -36,6 +37,7 @@ function App() {
       <GridGifs gifs={gifs} />
 
       <Counter />
+      <ComponenteXD />
     </div>
   );
 }
