@@ -22,7 +22,7 @@ export const useSearchGifs = () => {
     evento.preventDefault();
     if (valorInput.trim() === "") return;
     setestaCargando(true);
-    await new Promise((resolve) => setTimeout(resolve, 3000)); // Simula un retraso de 1 segundo
+    await new Promise((resolve) => setTimeout(resolve, 1000)); // Simula un retraso de 1 segundo
     const gifsObtenidos = await getGifs(valorInput);
     setGifs(gifsObtenidos);
     setestaCargando(false);
